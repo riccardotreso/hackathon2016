@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTTube", "NTTTube\NTTTube.csproj", "{BDD1ADEE-4B5B-46B2-9B41-EA8B492DC4E3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTTube.FTP", "NTTTube.FTP\NTTTube.FTP.csproj", "{D7AD7A68-925B-416C-BCED-6771063631D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTTube.Elastic", "NTTTube.Elastic\NTTTube.Elastic.csproj", "{E2AAEB1C-05F5-40BA-A399-23C62DC08C1A}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BDD1ADEE-4B5B-46B2-9B41-EA8B492DC4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDD1ADEE-4B5B-46B2-9B41-EA8B492DC4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDD1ADEE-4B5B-46B2-9B41-EA8B492DC4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDD1ADEE-4B5B-46B2-9B41-EA8B492DC4E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7AD7A68-925B-416C-BCED-6771063631D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7AD7A68-925B-416C-BCED-6771063631D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7AD7A68-925B-416C-BCED-6771063631D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
