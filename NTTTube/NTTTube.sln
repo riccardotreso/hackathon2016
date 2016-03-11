@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTTube.Web", "NTTTube.Web\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTTube.Stream", "NTTTube.Stream\NTTTube.Stream.csproj", "{5B327D82-561A-4EFE-BEE0-AF97D0B3CCE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTTTube.DB", "NTTTube.DB\NTTTube.DB.csproj", "{4067A0CB-C933-4293-BE1A-35394ACC285B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{5B327D82-561A-4EFE-BEE0-AF97D0B3CCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B327D82-561A-4EFE-BEE0-AF97D0B3CCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B327D82-561A-4EFE-BEE0-AF97D0B3CCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4067A0CB-C933-4293-BE1A-35394ACC285B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4067A0CB-C933-4293-BE1A-35394ACC285B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4067A0CB-C933-4293-BE1A-35394ACC285B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4067A0CB-C933-4293-BE1A-35394ACC285B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
