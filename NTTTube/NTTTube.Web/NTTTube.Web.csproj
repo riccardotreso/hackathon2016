@@ -175,6 +175,7 @@
     <Content Include="images\u12.png" />
     <Content Include="images\video_player.png" />
     <Content Include="images\video_player_001.png" />
+    <Content Include="images\video_player_mini.png" />
     <Content Include="images\video_player_ntt.png" />
     <Content Include="images\view.png" />
     <Content Include="images\whatsapp.png" />
