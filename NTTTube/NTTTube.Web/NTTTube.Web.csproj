@@ -109,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -131,6 +132,10 @@
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons\png\glyphicons-527-user-conversation.png" />
+    <Content Include="fonts\glyphicons\png\glyphicons-65-lightbulb.png" />
+    <Content Include="fonts\glyphicons\png\glyphicons-72-book.png" />
+    <Content Include="fonts\glyphicons\png\glyphicons-90-building.png" />
     <Content Include="Global.asax" />
     <Content Include="images\12.png" />
     <Content Include="images\13.png" />
@@ -171,6 +176,8 @@
     <Content Include="js\jquery.polyglot.language.switcher.js" />
     <Content Include="js\modernizr.custom.min.js" />
     <Content Include="js\responsiveslides.min.js" />
+    <Content Include="single.html" />
+    <Content Include="upload.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -182,7 +189,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +198,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutMaster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutPopUp.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
