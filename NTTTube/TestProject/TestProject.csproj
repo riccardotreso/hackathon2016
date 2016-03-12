@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FTP.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +62,10 @@
     <ProjectReference Include="..\NTTTube.DB\NTTTube.DB.csproj">
       <Project>{4067a0cb-c933-4293-be1a-35394acc285b}</Project>
       <Name>NTTTube.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NTTTube.FTP\NTTTube.FTP.csproj">
+      <Project>{d7ad7a68-925b-416c-bced-6771063631d9}</Project>
+      <Name>NTTTube.FTP</Name>
     </ProjectReference>
     <ProjectReference Include="..\NTTTube.Model\NTTTube.Model.csproj">
       <Project>{e6baf6fc-8bbc-4c15-9791-5e6fab5d60ad}</Project>
