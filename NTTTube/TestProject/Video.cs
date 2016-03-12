@@ -36,7 +36,7 @@ namespace TestProject
         {
 
             var id = Repository.InsertVideo(new NTTTube.Model.Video() {
-                path = "http://ntt-mediaservice.cloudapp.net/video/Adele - Hello.mp4",
+                path = "http://ntt-mediaservice.cloudapp.net/video/",
                 description = "test video streaming",
                 username = "tresor",
                 title ="Adele",

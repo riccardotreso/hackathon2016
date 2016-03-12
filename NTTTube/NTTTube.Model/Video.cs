@@ -34,6 +34,12 @@ namespace NTTTube.Model
                 return unlike.Count();
             }
         }
+
+        public string filePath {
+            get {
+                return string.Format("{0}{1}.mp4", path, Id);
+            }
+        }
     }
 
     public class Comment
