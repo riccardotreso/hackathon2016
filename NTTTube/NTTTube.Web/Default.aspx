@@ -247,7 +247,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="active"><a href="default.aspx" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
 					-->
 
-                    <li><a href="#" class="menu1"><span aria-hidden="true"><img src="fonts\glyphicons\png\glyphicons-90-building.png"/></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Azienda<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>                   
+                    <li><a href="#" class="menu1"><span aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-90-building.png")" alt="" /></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Azienda<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>                   
 
 						<ul class="cl-effect-1">
 							<li><a href="azienda1.html">Argomento1</a></li>                                             
