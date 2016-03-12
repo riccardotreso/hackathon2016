@@ -61,6 +61,10 @@
       <Project>{4067a0cb-c933-4293-be1a-35394acc285b}</Project>
       <Name>NTTTube.DB</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NTTTube.Model\NTTTube.Model.csproj">
+      <Project>{a21e7da4-9f69-4a8d-b6f2-e1d64e40084f}</Project>
+      <Name>NTTTube.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
