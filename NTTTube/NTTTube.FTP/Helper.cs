@@ -11,7 +11,8 @@ namespace NTTTube.FTP
 {
     public class Helper
     {
-        private static string ftpurl = ConfigurationManager.AppSettings["FtpUrl"].ToString();
+        private static string ftpServer = ConfigurationManager.AppSettings["FtpServer"].ToString();
+        private static string ftpFolder = ConfigurationManager.AppSettings["FtpFolder"].ToString();
         private static string username = ConfigurationManager.AppSettings["FtpUser"].ToString();
         private static string password = ConfigurationManager.AppSettings["FtpPassword"].ToString();
 
@@ -21,7 +22,7 @@ namespace NTTTube.FTP
         {
 
             // Get the object used to communicate with the server.
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(ftpurl + fileName);
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(string.Format("ftp://{0}{1}{2}", ftpServer, ftpFolder, fileName));
             request.Method = WebRequestMethods.Ftp.UploadFile;
             
             request.Credentials = new NetworkCredential(username, password);
@@ -41,6 +42,9 @@ namespace NTTTube.FTP
             FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
             response.Close();
+
+            //Change Permission
+            NTTTube.FTP.Command.SendFtpCommand(ftpServer, string.Format("{0}{1}", ftpFolder, fileName), username, password);
 
         }
     }
