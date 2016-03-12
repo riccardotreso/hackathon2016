@@ -48,9 +48,11 @@
       <HintPath>..\lib\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper.cs" />
+    <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NTTTube.Model\NTTTube.Model.csproj">

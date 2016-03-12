@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{624D0DA8-4A2
 		lib\MongoDB.Driver.dll = lib\MongoDB.Driver.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{F619DE23-C15D-45FD-B59D-2405D4551AFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NTTTube.Test", "NTTTube.Test", "{A8B0C865-95A1-494F-9EFC-7E2C6DF65C6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,8 +59,15 @@ Global
 		{12971E48-96EF-4681-96D4-72BA147172FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12971E48-96EF-4681-96D4-72BA147172FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12971E48-96EF-4681-96D4-72BA147172FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F619DE23-C15D-45FD-B59D-2405D4551AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F619DE23-C15D-45FD-B59D-2405D4551AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F619DE23-C15D-45FD-B59D-2405D4551AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F619DE23-C15D-45FD-B59D-2405D4551AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F619DE23-C15D-45FD-B59D-2405D4551AFE} = {A8B0C865-95A1-494F-9EFC-7E2C6DF65C6D}
 	EndGlobalSection
 EndGlobal
