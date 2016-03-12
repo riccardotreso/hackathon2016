@@ -173,6 +173,7 @@
     <Content Include="images\tv.png" />
     <Content Include="images\twitter.png" />
     <Content Include="images\u12.png" />
+    <Content Include="images\video_player.png" />
     <Content Include="images\view.png" />
     <Content Include="images\whatsapp.png" />
     <Content Include="js\bootstrap.min.js" />
