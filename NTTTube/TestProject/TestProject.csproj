@@ -53,6 +53,7 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FTP.cs" />
+    <Compile Include="ElasticSearch.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\NTTTube.DB\NTTTube.DB.csproj">
       <Project>{4067a0cb-c933-4293-be1a-35394acc285b}</Project>
       <Name>NTTTube.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NTTTube.Elastic\NTTTube.Elastic.csproj">
+      <Project>{e2aaeb1c-05f5-40ba-a399-23c62dc08c1a}</Project>
+      <Name>NTTTube.Elastic</Name>
     </ProjectReference>
     <ProjectReference Include="..\NTTTube.FTP\NTTTube.FTP.csproj">
       <Project>{d7ad7a68-925b-416c-bced-6771063631d9}</Project>
