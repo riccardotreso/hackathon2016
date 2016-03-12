@@ -1,7 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MongoDB.Driver;
-using MongoDB.Driver.Builders;
 using NTTTube.DB;
 
 namespace TestProject
