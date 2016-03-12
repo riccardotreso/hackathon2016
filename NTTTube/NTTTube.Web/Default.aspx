@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="Default.aspx"><h1><img src="images/hk/logo.png" alt="" /></h1></a>
+          <a class="navbar-brand" href="Default.aspx"><h1><img src="images/hk/logo.png" alt="" height="30"/></h1></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 			<div class="top-search">
@@ -242,12 +242,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 				<div class="drop-navigation drop-navigation">
 				  <ul class="nav nav-sidebar">
+
+                    <!--
 					<li class="active"><a href="default.aspx" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-					
-                    <li><a href="shows.html" class="user-icon"><span class="glyphicon glyphicon-home glyphicon-blackboard" aria-hidden="true"></span>Azienda</a></li>
+					-->
 
+                    <li><a href="#" class="menu1"><span aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-90-building.png")" alt="" /></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Azienda<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>                   
 
-                    <li><a href="#" class="menu1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Azienda</a></li>
 						<ul class="cl-effect-1">
 							<li><a href="azienda1.html">Argomento1</a></li>                                             
 							<li><a href="azienda2.html">Argomento2</a></li>
@@ -268,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-					<li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Idee<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+					<li><a href="#" class="menu1"><span class="glyphicon" aria-hidden="true"><img src="fonts\glyphicons\png\glyphicons-65-lightbulb.png"/></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Idee<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
 						<ul class="cl-effect-2">
 							<li><a href="movies.html">English</a></li>                                             
 							<li><a href="movies.html">Chinese</a></li>
@@ -285,7 +286,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 					
-                    <li><a href="#" class="menu"><span class="glyphicon glyphicon-film glyphicon-king" aria-hidden="true"></span>Mi presento<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                    <li><a href="#" class="menu"><span class="glyphicon" aria-hidden="true"><img src="fonts\glyphicons\png\glyphicons-527-user-conversation.png"/></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Mi presento<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
 						<ul class="cl-effect-1">
 							<li><a href="sports.html">Football</a></li>                                             
 							<li><a href="sports.html">Cricket</a></li>

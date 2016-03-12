@@ -232,61 +232,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 			<div class="drop-navigation drop-navigation">
 				<ul class="nav nav-sidebar">
-				    <li class="active"><a href="default.aspx" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+				    <li class="active"><a href="~/Views/Home.cshtml" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
 					
-                    <li><a href="shows.html" class="user-icon"><span class="glyphicon glyphicon-home glyphicon-blackboard" aria-hidden="true"></span>Azienda</a></li>
-
-                    <li><a href="#" class="menu1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Azienda</a></li>
-				        <ul class="cl-effect-1">
-					        <li><a href="azienda1.html">Argomento1</a></li>                                             
-					        <li><a href="azienda2.html">Argomento2</a></li>
-					        <li><a href="azienda3.html">Argomento3</a></li> 
-				        </ul>
-				        <!-- script-for-menu -->
-				        <script>
-					        $("li a.menu").click(function () {
-						        $("ul.cl-effect-1").slideToggle(300, function () {
-						            // Animation complete.
-						        });
-					        });
-				        </script>
+                    <li><a href="#" class="menu1"><span class="glyphicon" aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-90-building.png")" alt="" /></span>&nbsp; Azienda</a></li>
 	
-                    <li><a href="history.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>Formazione</a></li>
+                    <li><a href="history.html" class="sub-icon"><span class="glyphicon" aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-72-book.png")" alt="" /></span>&nbsp; Formazione</a></li>
 
-				    <li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Idee<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-					    <ul class="cl-effect-2">
-						    <li><a href="movies.html">English</a></li>                                             
-						    <li><a href="movies.html">Chinese</a></li>
-						    <li><a href="movies.html">Hindi</a></li> 
-					    </ul>
-					    <!-- script-for-menu -->
-					    <script>
-						    $("li a.menu1").click(function () {
-						        $("ul.cl-effect-2").slideToggle(300, function () {
-						            // Animation complete.
-						        });
-						    });
-					    </script>
+				    <li><a href="#" class="menu1"><span class="glyphicon" aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-65-lightbulb.png")" alt="" /></span>&nbsp; Idee</a></li>
 
-                    <li><a href="#" class="menu"><span class="glyphicon glyphicon-film glyphicon-king" aria-hidden="true"></span>Mi presento<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-					    <ul class="cl-effect-1">
-						    <li><a href="sports.html">Football</a></li>                                             
-						    <li><a href="sports.html">Cricket</a></li>
-						    <li><a href="sports.html">Tennis</a></li> 
-						    <li><a href="sports.html">Shattil</a></li>  
-					    </ul>
-					    <!-- script-for-menu -->
-					    <script>
-						    $("li a.menu").click(function () {
-						        $("ul.cl-effect-1").slideToggle(300, function () {
-						            // Animation complete.
-						        });
-						    });
-					    </script>
-					
-                    <li><a href="movies.html" class="song-icon"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>Dalla rete</a></li>
-					
-                    <li><a href="news.html" class="news-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>News</a></li>
+                    <li><a href="#" class="menu"><span class="glyphicon" aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-527-user-conversation.png")" alt="" /></span>&nbsp; Mi presento</a></li>
+			
+	
 				</ul>
 				<!-- script-for-menu -->
 					<script>
@@ -344,27 +300,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="footer-bottom">
 					<ul>
-						<li class="languages">
-							<select class="form-control bfh-countries" data-country="US">
-								<option value="">Select Language</option>
-								<option>Spanish</option>
-								<option>French</option>
-								<option>German</option>
-								<option>Italian</option>
-							</select>
-						</li>
-						<li class="languages">
-							<select class="form-control bfh-countries">
-								<option value="">Select Country</option>
-								<option value="ITA">Italy</option>
-							</select>
-						</li>
-						<li class="languages">
-							<select class="form-control bfh-countries" data-country="US">
-								<option value="">Safety Off</option>
-								<option value="">Safety On</option>
-							</select>
-						</li>
 						<li><a href="history.html" class="f-history">History</a></li>
 						<li><a href="#small-dialog5" class="play-icon popup-with-zoom-anim f-history f-help">Help</a></li>
 					</ul>
