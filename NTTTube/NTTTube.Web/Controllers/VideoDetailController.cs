@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NTTTube.DB;
 
 namespace NTTTube.Web.Controllers
 {
@@ -11,9 +12,11 @@ namespace NTTTube.Web.Controllers
         //
         // GET: /VideoDetail/
 
-        public ActionResult VideoDetailDocument()
+        public ActionResult VideoDetailDocument(string id)
         {
-            return View("~/Views/VideoDetail.cshtml");
+            var video = Repository.GetVideo(id);
+
+            return View("~/Views/VideoDetail.cshtml", video);
         }
 
     }

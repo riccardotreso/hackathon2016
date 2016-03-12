@@ -86,6 +86,13 @@ namespace NTTTube.DB
             return MongoDBHelper.GetById<Video>(contextDB, VideoCollection, id);
         }
 
+
+        public static IEnumerable<Video> GetAllVideo()
+        {
+            var contextDB = MongoDBHelper.GetContext(ConnectionString, DB);
+            return MongoDBHelper.GetCollection<Video>(contextDB, VideoCollection, Query.Null, Fields.Null);
+        }
+
         /// <summary>
         /// Aggiorna la descrizione del video
         /// </summary>
