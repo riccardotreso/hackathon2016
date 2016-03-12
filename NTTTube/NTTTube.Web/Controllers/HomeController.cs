@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NTTTube.DB;
 
 namespace NTTTube.Web.Controllers
 {
@@ -13,7 +14,9 @@ namespace NTTTube.Web.Controllers
 
         public ActionResult Index()
         {
-            return View("~/Views/Home.cshtml");
+            var video = Repository.GetAllVideo();
+
+            return View("~/Views/Home.cshtml", video);
         }
 
         public ActionResult GridCompany()
