@@ -16,5 +16,24 @@ namespace NTTTube.Web.Controllers
             return View("~/Views/Home.cshtml");
         }
 
+        public ActionResult GridCompany()
+        {
+            return View("~/Views/Azienda.cshtml");
+        }
+
+        public ActionResult GridTraining()
+        {
+            return View("~/Views/Formazione.cshtml");
+        }
+
+        public ActionResult GridIdea()
+        {
+            return View("~/Views/Idea.cshtml");
+        }
+
+        public ActionResult GridPeople()
+        {
+            return View("~/Views/MiPresento.cshtml");
+        }
     }
 }
