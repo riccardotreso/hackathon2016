@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="Default.aspx"><h1><img src="@Url.Content("~/images/hk/logo.png")" alt="" /></h1></a>
+          <a class="navbar-brand" href="@Url.Action("Index", "Home")"><h1><img src="@Url.Content("~/images/hk/logo.png")" alt="" /></h1></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 			<div class="top-search">
@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="header-top-right">
 				<div class="file">
-					<a href="upload.html">Upload</a>
+                    <a href="@Url.Action("UploadDocument","Upload")">Upload</a>
 				</div>	
 				<div class="signin">
 					<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">Sign Up</a>
@@ -232,8 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 			<div class="drop-navigation drop-navigation">
 				<ul class="nav nav-sidebar">
-				    <li class="active"><a href="~/Views/Home.cshtml" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-					
+				
                     <li><a href="#" class="menu1"><span class="glyphicon" aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-90-building.png")" alt="" /></span>&nbsp; Azienda</a></li>
 	
                     <li><a href="history.html" class="sub-icon"><span class="glyphicon" aria-hidden="true"><img src="@Url.Content("~/fonts/glyphicons/png/glyphicons-72-book.png")" alt="" /></span>&nbsp; Formazione</a></li>
@@ -281,11 +280,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="footer-top-nav">
 						<ul>
 							<li><a href="about.html">About</a></li>
-							<li><a href="press.html">Press</a></li>
 							<li><a href="copyright.html">Copyright</a></li>
-							<li><a href="creators.html">Creators</a></li>
-							<li><a href="#">Advertise</a></li>
-							<li><a href="developers.html">Developers</a></li>
+                            <li><a href="dev.html">Dev</a></li>
 						</ul>
 					</div>
 					<div class="footer-bottom-nav">
@@ -293,8 +289,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="terms.html">Terms</a></li>
 							<li><a href="privacy.html">Privacy</a></li>
 							<li><a href="#small-dialog4" class="play-icon popup-with-zoom-anim">Send feedback</a></li>
-							<li><a href="privacy.html">Policy & Safety </a></li>
-							<li><a href="try.html">Try something new!</a></li>
 						</ul>
 					</div>
 				</div>
