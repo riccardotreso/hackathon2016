@@ -70,8 +70,14 @@ namespace NTTTube.DB
                 entity.unlike = new List<string>();
 
             var contextDB = MongoDBHelper.GetContext(ConnectionString, DB);
-            return MongoDBHelper.Insert<Video>(contextDB, VideoCollection, entity);
+            
+            var id = MongoDBHelper.Insert<Video>(contextDB, VideoCollection, entity);
+            var elasticHelper = new Elastic.Helper();
+            elasticHelper.Connect();
+            elasticHelper.Index(entity);
 
+            return id;
+            
         }
 
         public static Video GetVideo(string id)
