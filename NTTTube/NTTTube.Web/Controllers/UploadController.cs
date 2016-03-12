@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NTTTube.FTP;
+using System.Threading.Tasks;
+using NTTTube.DB;
 
 namespace NTTTube.Web.Controllers
 {
@@ -27,13 +31,25 @@ namespace NTTTube.Web.Controllers
                 var fileName = Path.GetFileName(FileUpload.FileName);
                 var path = Path.Combine(Server.MapPath("~/Video/"), fileName);
                 FileUpload.SaveAs(path);
+
+                // Inserimento DB
+                var id = Repository.InsertVideo(new NTTTube.Model.Video()
+                {
+                    path = "http://ntt-mediaservice.cloudapp.net/video/",
+                    description = "test video streaming",
+                    username = "tresor",
+                    title = "Adele",
+                    category = "Private",
+                    channel = "Aziendale",
+                    date = DateTime.Now
+                });
+
+                // FTP Async
+                var byteArr = System.IO.File.ReadAllBytes("~/Video/" + fileName);
+                NTTTube.FTP.Helper.Upload(byteArr, id + ".mp4");
             }
-
-            // FTP Async
-
 
             return RedirectToAction("UploadDocument");
         }
-
     }
 }
