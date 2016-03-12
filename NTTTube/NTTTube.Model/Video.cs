@@ -16,8 +16,10 @@ namespace NTTTube.Model
         public string description { get; set; }
         public IEnumerable<Comment> comments { get; set; }
         public string channel { get; set; }
+        public string image { get; set; }
         public IEnumerable<string> like { get; set; }
         public IEnumerable<string> unlike { get; set; }
+
 
         public int likeCount
         {
