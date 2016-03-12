@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -108,6 +109,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,7 +125,52 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\dashboard.css" />
+    <Content Include="css\popuo-box.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\12.png" />
+    <Content Include="images\13.png" />
+    <Content Include="images\9.png" />
+    <Content Include="images\behance.png" />
+    <Content Include="images\ch1.png" />
+    <Content Include="images\comment.png" />
+    <Content Include="images\dribbble.png" />
+    <Content Include="images\fb.png" />
+    <Content Include="images\fb1.png" />
+    <Content Include="images\google.png" />
+    <Content Include="images\h-arrow.png" />
+    <Content Include="images\HK\azienda_black_circle.png" />
+    <Content Include="images\HK\Idea_black_circle.png" />
+    <Content Include="images\HK\logo.png" />
+    <Content Include="images\HK\NttTube.jpg" />
+    <Content Include="images\HK\NttTube_blu.png" />
+    <Content Include="images\HK\training_black_circle.png" />
+    <Content Include="images\like.png" />
+    <Content Include="images\lines.png" />
+    <Content Include="images\linkedin.png" />
+    <Content Include="images\mv.png" />
+    <Content Include="images\pinterest.png" />
+    <Content Include="images\pr1.png" />
+    <Content Include="images\pr2.png" />
+    <Content Include="images\rss.png" />
+    <Content Include="images\select-arrow.png" />
+    <Content Include="images\social.png" />
+    <Content Include="images\themes.png" />
+    <Content Include="images\tv.png" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\u12.png" />
+    <Content Include="images\view.png" />
+    <Content Include="images\whatsapp.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery.magnific-popup.js" />
+    <Content Include="js\jquery.polyglot.language.switcher.js" />
+    <Content Include="js\modernizr.custom.min.js" />
+    <Content Include="js\responsiveslides.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -134,6 +187,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
