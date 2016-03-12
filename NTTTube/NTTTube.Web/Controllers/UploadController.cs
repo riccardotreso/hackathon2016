@@ -29,23 +29,23 @@ namespace NTTTube.Web.Controllers
             if (FileUpload != null && FileUpload.ContentLength > 0)
             {
                 var fileName = Path.GetFileName(FileUpload.FileName);
-                var path = Path.Combine(Server.MapPath("~/Video/"), fileName);
+                var path = Path.Combine(Server.MapPath("/Video/"), fileName);
                 FileUpload.SaveAs(path);
 
                 // Inserimento DB
                 var id = Repository.InsertVideo(new NTTTube.Model.Video()
                 {
                     path = "http://ntt-mediaservice.cloudapp.net/video/",
-                    description = "test video streaming",
+                    description = "Inserimento video in NTTTube",
                     username = "tresor",
-                    title = "Adele",
+                    title = "Video di Prova",
                     category = "Private",
                     channel = "Aziendale",
                     date = DateTime.Now
                 });
 
                 // FTP Async
-                var byteArr = System.IO.File.ReadAllBytes("~/Video/" + fileName);
+                var byteArr = System.IO.File.ReadAllBytes(path);
                 NTTTube.FTP.Helper.Upload(byteArr, id + ".mp4");
             }
 
