@@ -218,6 +218,18 @@
     <Content Include="Views\Upload.cshtml" />
     <Content Include="Views\VideoDetail.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Azienda.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Formazione.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Idea.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MiPresento.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
